@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5%;
+    font-family: Mathjax_Math;
+    background-image: url(../Static/main2.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+
+
+  }
+
+/* Center website */
+.main {
+    max-width: 80%;
+    margin:auto;
+    border-style:hidden double;
+    border-width: thick;
+    border-color: black;
+  }
+
+
+  .row {
+      margin: auto;
+      
+
+  }
+
+  .row > .column {
+      padding: 7.5%;
+      border-width:thin;
+      border-color: #625032;
+      border-style:outset;
+      border-radius: 2%;
+      
+}
+
+
+
+                  @keyframes mymove {
+                    0%  {left:550px; top:700px;}
+                    100%   {left: 11px; top: 15px;}
+                  }
+
+.content {
+    color:royalblue;
+    padding: 2%;
+    font-family:Mathjax_Math;
+    font-weight: bold;
+    font-size: 135%;
+    position:relative;
+    -webkit-animation: mymove 1.99s;
+    animation-iteration-count: 1;
+    display:inline-table;
+
+  }
+
+  .img {
+    width: 80%;
+    border-radius:15%;
+    border-left-style: outset;
+    border-left-color: black;
+    border-left-width: thick;
+    border-right-style: outset;
+    border-right-color: black;
+    border-right-width: thick;
+
+    border-bottom-style: inset;
+    border-bottom-width:medium;
+    border-bottom-color:grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0.55%;  
+  }
+
