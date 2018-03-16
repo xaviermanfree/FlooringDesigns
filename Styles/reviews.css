@@ -1,0 +1,38 @@
+body {
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    opacity: 0.65;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top:25.9%;
+    background-color: antiquewhite;
+    height: auto;
+
+}
+
+li:before {
+    content: "/2613"; color:royalblue;
+    
+}
+
+li {
+    padding: 8%;
+    text-align: left;
+    font-size: 150%;
+    position: static;
+    background-color: dimgrey;
+    
+    
+}
+
+li a:hover:not(.active) {
+    font-size: 150%;
+    color: #1f1f20;
+    
+}

@@ -1,124 +1,135 @@
 
 body {
-    padding: 5%;
     font-family: Mathjax_Math;
     background-image: url(../Static/main2.jpg);
     background-size:contain;
     background-repeat: repeat;
     margin: 0;
     padding: 0;
+    background-blend-mode:overlay;
+    padding: 2%;
 
 
   }
 
-/* Center website */
-.main {
-    max-width: 100%;
-    margin:auto;
+ul {
+    padding: 0% ;
+    width: 19%;
+    opacity: 0.95;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+    background-color: dimgrey;
+    top: .5%;
+    bottom: .5%;
 }
 
-                  @keyframes mymove {
-                      0%  {left:550px; top:700px;}
-                      100%   {left: 11px; top: 15px;}
-}
-div.sticky {   
-    border-style: outset double;
-    border-color:dimgray;
-    border-width: thick;
-    overflow: hidden;  
-    align-self: center;
-    border-radius: 10%;
-    position: -webkit-sticky;
-    position: sticky;
-    margin-top: 0px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;    height:300px;
-    display:table-cell;
-    width: 45%;
-    -webkit-animation: mymove 1.99s;
-    animation-iteration-count: 1;
+
+
+li:before {
+    content: "\2613"; color:royalblue;
+    border-bottom: 3.50px groove deepskyblue;
     
-}
-
-
-div.sticky button {
-    border-radius: 20.25%;
-    color:royalblue;
-    background-color:azure;
-    font-family:monospace;
-    font-size: 135%;
-    margin-top: 50px;
-    align-content:center;
-    border: double silver;
-    border-width: medium;
-    position: -webkit-sticky;
-    position: sticky;
-    display: grid;
     
+
+}
+
+li {
+    padding: 4%;
+    text-align:center;
+    font-size: 100%;
+    position:static;
+    background-color: floralwhite;
+    border: 6.85px inset royalblue;
+    margin-top: 17%;
+    margin-bottom: 15%;
 }
 
 
-.row {
-      margin: auto;
+li a:hover:not(.active) {
+    font-size: 115%;
+    color:darkblue;
+
 }
 
-  .row > .column {
-      padding: 0.5%;
-      border-width:thin;
-      border-color: #625032;
-      border-style:outset;
-      border-radius: 2%;
+li a {
+    border-bottom: 3.50px groove deepskyblue;
 }
 
 
                   @keyframes mymove {
                     0%  {left:550px; top:700px;}
                     100%   {left: 11px; top: 15px;}
-                  }
-.content {
-    color:royalblue;
-    padding: 4%;
+}
+.container {
+    background-color:darkslategray;
+    padding: 8%;
     font-family:Mathjax_Math;
     font-weight: bold;
     font-size: 135%;
     position:relative;
     -webkit-animation: mymove 1.99s;
     animation-iteration-count: 1;
-    display:inline-table;
-    border: royalblue double thick;
+    border-left:15px double royalblue;
+    border-right:15px double royalblue;
+    border-top:14.25px double inset royalblue;
+    border-bottom:14.25px double inset royalblue;
     border-radius: 4.50%;
-    margin-left: 22%;
-    margin-top: 0px;
+    width:65%;
+    height: auto;
+    margin-left: 20%;
 }
+    
+
+
 .info{
     color: royalblue;
+    background-color: darkslategray;
     font-family: monospace;
     font-weight: 600;
     font-size: 115%;
     position: relative;
     -webkit-animation: mymove 1.99s;
     animation-iteration-count: 1;
-    border: royalblue double thick;
+    border: #030324 double thick;
     border-radius: 4.50%;
-    margin-left:auto;
-    
+    width:52%;
+    height: auto;
+    position: relative;
 }
-.img {
-    width: 80%;
+
+.info h2 {
+    color:aliceblue;
+    opacity: 1.0;
+    text-align:center;
+}
+
+
+.info p {
+    color:aliceblue;
+    opacity: 1.0;
+    text-align:center;
+}
+.img  {
     border-radius:15%;
     border-left-style: outset;
-    border-left-color: black;
+    border-left-color:darkslateblue;
     border-left-width: thick;
     border-right-style: outset;
-    border-right-color: black;
+    border-right-color: darkblue;
     border-right-width: thick;
-
     border-bottom-style: inset;
     border-bottom-width:medium;
-    border-bottom-color:grey;
-    background-position: center;
+    border-bottom-color:darkslateblue;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0.55%;  
-  }
+    background-size:cover;
+    background-color:darkslategray;
+    
+}
+
+.img img {
+    width: 80%;
+    height: auto;
+    display:contents;
+    padding-top: 2.5%;
+}
